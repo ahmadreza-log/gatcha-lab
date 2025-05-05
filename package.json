@@ -1,0 +1,55 @@
+{
+  "name": "gatcha-lab",
+  "version": "1.0.0",
+  "description": "Node.js Gaming Project",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/app/index.ts",
+    "dev:watch": "tsx watch src/app/index.ts",
+    "build": "tsup",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmadreza-log/gatcha-lab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahmadreza-log/gatcha-lab/issues"
+  },
+  "homepage": "https://github.com/ahmadreza-log/gatcha-lab#readme",
+  "keywords": [],
+  "author": {
+    "name": "Ahmadreza Ebrahimi",
+    "email": "ahmadreza.log@gmail.com",
+    "url": "https://github.com/ahmadreza-log"
+  },
+  "tsup": {
+    "entry": [
+      "src/app/index.ts"
+    ],
+    "legacyOutput": true,
+    "splitting": true,
+    "sourcemap": true,
+    "clean": true,
+    "cjsInterop": true,
+    "minify": "terser"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "edge.js": "^6.2.1",
+    "express": "^5.1.0",
+    "liquidjs": "^10.21.0",
+    "mongoose": "^8.14.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^22.15.3",
+    "terser": "^5.39.0",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
