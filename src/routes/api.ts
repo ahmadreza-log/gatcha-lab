@@ -1,7 +1,9 @@
-import express from "express"
+import { Router } from '@/lib/router'
 
-const routes = express.Router()
+import { AuthController } from '@/controllers/auth.controller'
 
-routes.get("/", (req, res) => {})
+const router = new Router()
 
-export default routes
+router.resource('/auth', AuthController)
+
+export default router.init()

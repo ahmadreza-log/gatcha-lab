@@ -1,12 +1,5 @@
-import express from "express"
+import { Router } from '@/lib/router'
 
-const routes = express.Router()
+const router = new Router()
 
-routes.get("/", (req, res) => {
-    res.render('home', {
-        name: 'AhmadReza Ebrahimi',
-        title: 'Welcome Page'
-    })
-})
-
-export default routes
+export default router.init()

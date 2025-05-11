@@ -41,7 +41,9 @@
     "edge.js": "^6.2.1",
     "express": "^5.1.0",
     "liquidjs": "^10.21.0",
-    "mongoose": "^8.14.1"
+    "mongoose": "^8.14.1",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.1",
